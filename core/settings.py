@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-0iinc2=q6od3ijv!!z_w2)m!3)p+4uw29kyr3(h!_5u0^m)6@y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sis-gestion-documental.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -121,3 +121,4 @@ import os
 # Define la URL y la carpeta raíz para los archivos multimedia
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
