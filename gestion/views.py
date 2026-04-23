@@ -97,3 +97,7 @@ def exportar_fuid_pdf(request, transferencia_id):
         return HttpResponse(f'Ocurrió un error al generar el FUID: {pisa_status.err}', status=500)
     
     return response
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'gestion/index.html')
